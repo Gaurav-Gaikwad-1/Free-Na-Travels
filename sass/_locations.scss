@@ -1,0 +1,57 @@
+#locations{
+    margin: 7.5rem 0;
+    text-align: center;
+    color: white;
+
+    h2{
+        font-size: 2.1rem;
+        text-transform: uppercase;
+    }
+
+    #header-link{
+        font-size: 1.8rem;
+        display: block;
+        color: #Bababa;
+        text-decoration: underline;
+        margin: .5rem 0 1.4rem;
+
+        &:hover{
+            opacity: .7;
+        }
+    }
+
+    input{
+        background-color: transparent;
+        width: 18rem;
+        padding: 0 2rem .7rem;
+        display: block;
+        text-align: center;
+        margin: 4.5rem auto;
+        border-bottom: 1px solid $faint-white;
+    }
+
+    ::placeholder { color: #d3d3d3; }
+    
+    h4 {
+        font-size: px-to-rem(24px);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    ul {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: px-to-rem(18px) auto;
+    }
+    
+    li {
+        color: rgba(255, 255, 255, .7);
+        font-size: px-to-rem(18px);
+        list-style: none;
+        padding: px-to-rem(18px) px-to-rem(58px);
+        
+        a { cursor: pointer; }
+    }
+}

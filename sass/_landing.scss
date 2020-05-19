@@ -1,0 +1,70 @@
+@keyframes intro-content{
+    0%{  opacity: 0; }
+    100%{  opacity: 1;}
+}
+
+@keyframes intro-header{
+    0%{  transform:translateY(40px) scale(.6);  }
+    100%{ transform: translate(0)  scale(1); }
+}
+
+
+
+
+
+
+
+#bg{
+    background-image: url(get-image("bg.jpg"));
+    background-size: cover;
+    background-attachment: fixed;   //fixed makes bg stays in place as u scroll
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+
+#landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    transition: all .4s; 
+    position: relative;
+    z-index: 10;
+
+    animation-name: intro-content;
+    animation-duration: 1.4s;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+
+    h1{
+        font-size: px-to-rem(48px);
+        margin-bottom: px-to-rem(20px);
+
+        animation-name: intro-header;
+        animation-duration: 1s;
+        animation-delay: .1s;
+    }
+
+    p{
+        width: 49vw;
+        font-size: px-to-rem(25px);
+        text-align: center;
+        line-height: 130%;
+    }
+    button{
+        color: #425831;
+        background-color: white;
+        padding: 10px 60px;
+        margin-top: px-to-rem(18px);
+        border-radius: 4px;
+
+        &:hover{
+            opacity: .8;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+#info-section{
+    color: #cfcfcf;
+    margin: 5rem;
+
+    article{
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+
+    figure{
+        width: 42%;
+        height: 13.5rem;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+        transition: all .3s;
+
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+
+    div{
+       margin-left: 5.1rem;
+
+       h2{
+           font-size: 1.7rem;
+           margin-bottom: .5rem;
+       }
+
+       p{
+           font-size: 1rem;
+           width: 70%;
+           line-height: 220%;    
+       }
+    }
+}
+article:nth-of-type(1) figure {background-image: url(get-image("info-1.jpg"));}
+article:nth-of-type(2) figure {
+    background-image: url(get-image("info-2.jpg"));
+    margin-left: 30px;}
+article:nth-of-type(3) figure {background-image: url(get-image("info-3.jpg"));}
+
+}
